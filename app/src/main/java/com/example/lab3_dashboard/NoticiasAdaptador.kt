@@ -27,6 +27,9 @@ public class NoticiasAdaptador(private var noticias: MutableList<Noticia>) : Rec
         return this.noticias.size
     }
 
+    /***
+     *
+     */
     class NoticiasHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
         fun bind(noticia: Noticia) = with(itemView){
             val txtTitle:TextView = findViewById(R.id.txtTitle)
